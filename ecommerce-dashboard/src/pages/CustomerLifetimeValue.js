@@ -12,7 +12,7 @@ const CustomerLifetimeValue = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await axios.get('http://localhost:5000/api/customer-lifetime-value');
+        const response = await axios.get('https://rapid-quest-assi-back.vercel.app/api/customer-lifetime-value');
         const chartData = {
           labels: response.data.map(item => item._id),
           datasets: [

@@ -13,7 +13,7 @@ const NewCustomers = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await axios.get(`http://localhost:5000/api/new-customers/${interval}`);
+        const response = await axios.get(`https://rapid-quest-assi-back.vercel.app/api/new-customers/${interval}`);
         const chartData = {
           labels: response.data.map(item => item._id),
           datasets: [
