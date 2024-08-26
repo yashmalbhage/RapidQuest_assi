@@ -19,8 +19,8 @@ connectDB();
 // Middleware
 app.use(cors());
 app.use(express.json());
-const cors = require('cors');
-app.use(cors());
+
+
 // Routes
 app.use('/api/total-sales', totalSalesRoutes);
 app.use('/api/sales-growth', salesGrowthRoutes);
